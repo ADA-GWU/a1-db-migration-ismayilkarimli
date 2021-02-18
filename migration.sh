@@ -14,7 +14,7 @@ alter table students alter column st_name type varchar(30);
 alter table students alter column st_last type varchar(30);
 alter table students drop column st_id;
 alter table interests add column interests varchar(15)[];
-insert into interests(student_id, interests) select student_id,  array_agg(interest) from interests group by(student_id);
+insert into interests(student_id, interests) select student_id, array_agg(interest) from interests group by(student_id);
 delete from interests where interests.interests is null;
 alter table interests drop column interest;
 commit;
