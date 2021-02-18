@@ -13,7 +13,7 @@ update students set st_id=student_id;
 alter table students alter column st_name type varchar(15);
 alter table students alter column st_last type varchar(15);
 alter table students drop column student_id;
-alter table interests add column interest varchar(15);
+alter table interests add column interest text;
 insert into interests(student_id, interest) select student_id, unnest(interests) from interests;
 delete from interests where interests.interest is null;
 alter table interests drop column interests;
