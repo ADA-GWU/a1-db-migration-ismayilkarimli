@@ -23,7 +23,7 @@ Rollback script:
 ```bash
 $HOME/a1-db-migration-ismayilkarimli/rollback.sh [database name]
 ```
-#### Example
+### Example:
 ```bash
 $HOME/a1-db-migration-ismayilkarimli/migration.sh assignment01
 ```
