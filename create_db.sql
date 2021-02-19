@@ -10,7 +10,7 @@ create table if not exists students(
 );
 create table if not exists interests(
     student_id int,
-    interest text
+    interest varchar(15)
 );
 insert into students values(1, 'Walter', 'White');
 insert into students values(2, 'Beth', 'Harmon');
