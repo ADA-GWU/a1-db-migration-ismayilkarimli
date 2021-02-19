@@ -25,6 +25,7 @@ $HOME/a1-db-migration-ismayilkarimli/rollback.sh [database name]
 ### Example:
 ```bash
 $HOME/a1-db-migration-ismayilkarimli/migration.sh db4586
+$HOME/a1-db-migration-ismayilkarimli/rollback.sh db4586
 ```
 #### Note:
 If you do not have the required database, you can create it by running the following command (ensure that there is no database with name db4586):
